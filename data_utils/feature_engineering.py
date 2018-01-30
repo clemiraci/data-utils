@@ -74,7 +74,7 @@ class FeatureEngineering:
                 df[f] = df[value[0]] / df[value[1]]
         return df
 
-    def crate_feature_matrix(self, df, features, target):
+    def create_feature_matrix(self, df, features, target):
         complete_df = self._generate_combined_features(df, features)
         X = complete_df[features].copy()
         y = complete_df[target]
